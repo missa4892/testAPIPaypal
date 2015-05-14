@@ -1,0 +1,10 @@
+#showBtn{
+	display: block;
+	margin-bottom: 2.5em;
+}
+
+#expressSubmit{
+	background: url(https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif);
+	margin-right: 7px; 
+	display: block;
+}
