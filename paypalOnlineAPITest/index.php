@@ -56,6 +56,7 @@ include_once("config.php");
     }
     ?>
     <h4>Disclaimer: All images are obtained from <a href="https://www.flickr.com/search/?q=clothing%20photos">Creative Commons</a>.</h4>
+    <h4>Author: Saloni Kaur</h4>
     </div>
 </div>
 

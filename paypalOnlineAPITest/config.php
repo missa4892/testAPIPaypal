@@ -14,7 +14,7 @@ $PayPalApiUsername 		= 'm_issa_4892-facilitator_api1.hotmail.com'; //PayPal API 
 $PayPalApiPassword 		= '5BF6M67CVVR4U489'; //Paypal API password
 $PayPalApiSignature 	= 'An5ns1Kso7MWUdW4ErQKJJJ4qi4-AbgltXiu2BgDZgJ0b2KzKxDbBu5c'; //Paypal API Signature
 $PayPalCurrencyCode 	= 'SGD'; 
-$PayPalReturnURL 		= 'http://localhost/paypal-shopping-cart-example/paypal-express-checkout/process.php';
-$PayPalCancelURL 		= 'http://localhost/paypal-shopping-cart-example/paypal-express-checkout/cancel_url.php'; //Cancel URL if user clicks cancel
+$PayPalReturnURL 		= 'http://localhost/paypalOnlineAPITest/paypal-express-checkout/process.php';
+$PayPalCancelURL 		= 'http://localhost/paypalOnlineAPITest/paypal-express-checkout/cancel_url.php'; //Cancel URL if user clicks cancel
 
 ?>

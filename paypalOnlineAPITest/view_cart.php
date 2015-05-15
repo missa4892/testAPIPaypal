@@ -42,17 +42,16 @@ include_once("config.php");
 				echo '<span class="remove-itm"><a href="cart_update.php?removep='.$cart_itm["code"].'&return_url='.$current_url.'">&times;</a></span>';
 				echo '<div class="p-price">'.$currency.$obj->price.'</div>';
 	            echo '<div class="product-info">';
-				echo '<h5>'.$obj->product_name.' (Code :'.$product_code.')</h5> ';
+				echo '<h4><b>'.$obj->product_name.' (Code :'.$product_code.')</b>';
+				echo '   Qty : '.$cart_itm["qty"].'</h4> ';
 	            echo '<div class="product-thumb"><img src="images/'.$obj->product_img_name.'" style="height:100px;width:100px;border-style: solid;border-width: 4px;"></div>';
-	            echo '<div><p>'.$obj->product_desc.'<p></div>';
+	            echo '<div style="padding: 1em;font-size:12px;"><p>'.$obj->product_desc.'<p></div>';
 				echo '</div>';
 	            echo '</li>';
-				$subtotal = ($cart_itm["price"]);
+				$subtotal = ($cart_itm["price"]*$cart_itm["qty"]);
 				$total = ($total + $subtotal);
 
-				echo '<input type="hidden" name="item_name['.$cart_items.']" value="'.$obj->product_name.'" />';
 				echo '<input type="hidden" name="item_code['.$cart_items.']" value="'.$product_code.'" />';
-				echo '<input type="hidden" name="item_desc['.$cart_items.']" value="'.$obj->product_desc.'" />';
 				echo '<input type="hidden" name="item_qty['.$cart_items.']" value="'.$cart_itm["qty"].'" />';
 				$cart_items ++;
 				
@@ -71,6 +70,8 @@ include_once("config.php");
 		
 	    ?>
 	    </div>
+	    <h4>Disclaimer: All images are obtained from <a href="https://www.flickr.com/search/?q=clothing%20photos">Creative Commons</a>.</h4>
+    	<h4>Author: Saloni Kaur</h4>
 	</div>
 	 <div class="col-md-2"></div>
 </body>
